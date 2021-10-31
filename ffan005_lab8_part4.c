@@ -43,28 +43,28 @@ int main(void) {
     unsigned short x = ADC;
     unsigned short PB = (char)x;
 
-    if(PB <= (67)){
+    if(PB <= (32)){
     PORTB = 0x01;
     }
-    if((PB > 67) && (PB <= (167))) {
+    if((PB > 32) && (PB <= (64))) {
     PORTB = 0x02;
     }
-    if((PB > 167) && (PB <= (267))) {
+    if((PB > 64) && (PB <= (96))) {
     PORTB = 0x04;
     }
-    if((PB > 267) && (PB <= (367))) {
+    if((PB > 96) && (PB <= (128))) {
     PORTB = 0x08;
     }
-    if((PB > 367) && (PB <= (467))) {
+    if((PB > 128) && (PB <= (160))) {
     PORTB = 0x10;
     }
-    if((PB > 467) && (PB <= (567))) {
+    if((PB > 160) && (PB <= (192))) {
     PORTB = 0x20;
     }
-    if((PB > 567) && (PB <= (667))) {
+    if((PB > 192) && (PB <= (224))) {
     PORTB = 0x40;
     }
-    if(PB > (667)) {
+    if(PB > (224)) {
     PORTB = 0x80;
     }
 

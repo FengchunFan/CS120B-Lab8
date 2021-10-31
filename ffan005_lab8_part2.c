@@ -6,14 +6,15 @@
  *
  *      I acknowledge all content contained herein, excluding template or example
  *      code, is my own original work.
- *      Demo: https://www.youtube.com/watch?v=Uq0ezMUxj08
+ *      Demo: https://www.youtube.com/watch?v=L_jUnvC0w7w
  */
+//I used eye observation to find the Max value we gonna use for ex3 and 4, which is around 0x2FF, or 767, I mentiuned 
+//750 in the demo video :)
+
 #include <avr/io.h>
 #ifdef _SIMULATE_
 #include "simAVRHeader.h"
 #endif
-
-//unsigned short x = ADC; give errors :(
 
 void ADC_init(){
 ADCSRA |= (1 <<  ADEN) | (1 << ADSC) | (1 << ADATE);
